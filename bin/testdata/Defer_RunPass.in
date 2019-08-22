@@ -1,0 +1,6 @@
+defer println("defer");
+defer println("defer2");
+if(1 == 0) {
+    defer println("not call");
+}
+println("aaa");

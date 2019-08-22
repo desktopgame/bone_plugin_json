@@ -1,0 +1,4 @@
+a := 0;
+println(a.to_string());
+a := a + 1;
+println(a.to_string());

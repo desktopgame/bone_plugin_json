@@ -1,0 +1,9 @@
+if(condA) {
+    a();
+} else if(condB) {
+    b();
+} else if(condC) {
+    c();
+} else {
+    d();
+}

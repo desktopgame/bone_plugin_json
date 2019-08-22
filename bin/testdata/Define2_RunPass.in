@@ -1,0 +1,4 @@
+{} <- load("reflection.bn");
+a := object();
+define(a, "foo", "bar");
+assert(defined(a, "foo"));

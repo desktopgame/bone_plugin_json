@@ -1,0 +1,4 @@
+bone
+*.dylib
+*.so
+*.dll
