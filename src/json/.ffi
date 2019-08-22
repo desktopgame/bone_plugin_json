@@ -1,0 +1,6 @@
+// this file is for ffi
+// define a export function by next syntax
+%%BEGIN
+%%END
+$function/void*/json2obj(char* file);
+$function/char*/obj2json(void* file);

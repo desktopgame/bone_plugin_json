@@ -1,0 +1,2 @@
+json2obj := extern_def("ffi.json_json2obj",["file"],["ret"]);
+obj2json := extern_def("ffi.json_obj2json",["obj"],["ret"]);

@@ -25,6 +25,9 @@ set(APP_IGNORE_COMPILE "CMakeCCompilerId.c" "feature_tests.c")
 set(BONE_INCLUDE "/Users/koya/Work/BoneWork/bone/src" CACHE PATH "Path to bone header")
 set(BONE_LIBRARY_DIRS "/Users/koya/Work/BoneWork/bone/lib" CACHE PATH "Path to bone library")
 set(BONE_LIBRARIES "bone")
+set(CJSON_INCLUDE "/usr/local/include" CACHE PATH "Path to cjson header")
+set(CJSON_LIBRARY_DIRS "/usr/local/lib" CACHE PATH "Path to cjson library")
+set(CJSON_LIBRARIES "cjson")
 message(STATUS "BONE_INCLUDE=${BONE_INCLUDE}")
 message(STATUS "BONE_LIBRARY_DIRS=${BONE_LIBRARY_DIRS}")
 message(STATUS "BONE_LIBRARIES=${BONE_LIBRARIES}")
@@ -55,6 +58,7 @@ endforeach()
 link_directories (
     ${GLIB_LIBRARY_DIRS}
     ${BONE_LIBRARY_DIRS}
+    ${CJSON_LIBRARY_DIRS}
 )
 add_library(${APP_EXECUTABLE} SHARED ${SOURCES})
 add_definitions (
@@ -65,6 +69,7 @@ target_include_directories(
     PRIVATE
     ${GLIB_INCLUDE_DIRS}
     ${BONE_INCLUDE}
+    ${CJSON_INCLUDE}
 )
 target_link_libraries(
     ${APP_EXECUTABLE}
@@ -72,6 +77,7 @@ target_link_libraries(
     ${GLIB_LIBRARIES}
     ${BONE_LIBRARIES}
     ${CMAKE_DL_LIBS}
+    ${CJSON_LIBRARIES}
     m
 )
 set_target_properties(json
