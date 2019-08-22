@@ -154,6 +154,10 @@ static cJSON *obj2json(bnInterpreter *bone, bnFrame *frame, bnObject *obj,
                         }
                         bnReference entryRef = v;
                         bnObject *entry = bnGetObject(bone->heap, entryRef);
+                        if (entry->type == BN_OBJECT_LAMBDA)
+                        {
+                                continue;
+                        }
                         cJSON_AddItemToObject(
                             json, str, obj2json(bone, frame, entry, depth + 1));
                 }

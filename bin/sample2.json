@@ -1,37 +1,13 @@
 {
-	"opNotEqual":	{
-	},
-	"to_string":	{
-	},
-	"opEqual":	{
-	},
 	"name":	"HogeHoge",
 	"resolutions":	[{
-			"opNotEqual":	{
-			},
 			"width":	1280,
-			"to_string":	{
-			},
-			"opEqual":	{
-			},
 			"height":	720
 		}, {
-			"opNotEqual":	{
-			},
 			"width":	1920,
-			"to_string":	{
-			},
-			"opEqual":	{
-			},
 			"height":	1080
 		}, {
-			"opNotEqual":	{
-			},
 			"width":	3840,
-			"to_string":	{
-			},
-			"opEqual":	{
-			},
 			"height":	2160
 		}]
 }
